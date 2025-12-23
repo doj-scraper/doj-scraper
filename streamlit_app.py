@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # --- Configuration ---
-BASE_URL = os.getenv("BASE_URL", "https://www.justice.gov/epstein/court-records ")
+BASE_URL = os.getenv("BASE_URL", "https://www.justice.gov/epstein/court-records")
 DOWNLOAD_DIR = Path(os.getenv("DOWNLOAD_DIR", "downloads"))
 INDEX_FILE = Path(os.getenv("INDEX_FILE", "search_corpus.json"))
 MAX_WORKERS_DOWNLOADS = int(os.getenv("MAX_WORKERS_DOWNLOADS", "8"))
