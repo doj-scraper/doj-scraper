@@ -34,8 +34,8 @@ MOBILE_CSS = """
 <style>
     /* 1. Global Background & Mobile Optimization */
     .stApp {
-        background-color: #e0e5ec;
-        color: #4d535e;
+        background-color: #40407a;
+        color: #f7f1e3;
     }
     
     /* Mobile-specific adjustments */
@@ -49,30 +49,30 @@ MOBILE_CSS = """
     }
     
     /* 2. Headers & Text */
-    h1, h2, h3, .stMarkdown {
-        color: #4d535e !important;
+    h1, h2, h3, .stMarkdown, .stText, p {
+        color: #f7f1e3 !important;
         font-family: 'Helvetica Neue', sans-serif;
     }
     
     /* 3. Neumorphic Cards (Mobile-Optimized) */
     .streamlit-expanderHeader, .stAlert {
-        background-color: #e0e5ec !important;
+        background-color: #40407a !important;
         border-radius: 15px !important;
-        box-shadow: 5px 5px 10px rgb(163,177,198,0.6), -5px -5px 10px rgba(255,255,255, 0.5);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.05);
         border: none !important;
-        color: #4d535e !important;
+        color: #f7f1e3 !important;
         margin-bottom: 0.5rem;
         padding: 0.5rem;
     }
     
     /* 4. Neumorphic Buttons (Mobile-Optimized) */
     div.stButton > button {
-        background-color: #e0e5ec;
-        color: #4d535e;
+        background-color: #40407a;
+        color: #f7f1e3;
         border: none;
         border-radius: 25px;
-        box-shadow: 3px 3px 6px 0 rgba(163,177,198, 0.7), 
-                    -3px -3px 6px 0 rgba(255,255,255, 0.8);
+        box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.3),
+                    -3px -3px 6px 0 rgba(255, 255, 255, 0.05);
         transition: all 0.2s ease-in-out;
         padding: 0.4rem 1rem;
         font-weight: 600;
@@ -83,37 +83,42 @@ MOBILE_CSS = """
     /* Button Hover & Active States */
     div.stButton > button:hover {
         transform: translateY(-1px);
-        box-shadow: 6px 6px 12px 0 rgba(163,177,198, 0.7), 
-                    -6px -6px 12px 0 rgba(255,255,255, 0.8);
-        color: #007bff;
+        box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.3),
+                    -6px -6px 12px 0 rgba(255, 255, 255, 0.05);
+        color: #33d9b2;
     }
     
     div.stButton > button:active {
-        box-shadow: inset 2px 2px 4px 0 rgba(163,177,198, 0.7), 
-                    inset -2px -2px 4px 0 rgba(255,255,255, 0.8);
+        box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.3),
+                    inset -2px -2px 4px 0 rgba(255, 255, 255, 0.05);
         transform: translateY(0px);
     }
 
     /* 5. Inputs (Mobile-Optimized) */
     div.stTextInput > div > div > input {
-        background-color: #e0e5ec;
+        background-color: #40407a;
         border-radius: 12px;
         border: none;
-        box-shadow: inset 3px 3px 6px 0 rgba(163,177,198, 0.7), 
-                    inset -3px -3px 6px 0 rgba(255,255,255, 0.8);
-        color: #4d535e;
+        box-shadow: inset 3px 3px 6px 0 rgba(0, 0, 0, 0.3),
+                    inset -3px -3px 6px 0 rgba(255, 255, 255, 0.05);
+        color: #f7f1e3;
         padding-left: 12px;
         font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    div.stTextInput > label {
+        color: #f7f1e3 !important;
     }
     
     /* 6. Mobile-Friendly Progress Bar */
     .stProgress > div > div > div > div {
-        background-color: #007bff;
+        background-color: #34ace0;
     }
     
     /* 7. Responsive Expander Content */
     .streamlit-expanderContent {
         padding: 0.5rem;
+        color: #f7f1e3;
     }
 </style>
 """
